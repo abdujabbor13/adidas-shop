@@ -43,6 +43,7 @@ const ProductItem = ({ data }) => {
               style={{ width: "100%", height: "100%" }}
               src={product.url}
               alt={product.title}
+              loading="lazy"
             />
             <p style={{ color: "grey", marginBottom: "10px" }}>
               {product.info}

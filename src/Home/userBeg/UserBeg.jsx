@@ -41,7 +41,7 @@ const UserBeg = () => {
                 <img
                   style={{ width: "250px", height: "auto" }}
                   src={product.url}
-                  alt={product.title}
+                  alt={product.title} loading="lazy"
                 />
                 <CloseOutlined
                   style={{

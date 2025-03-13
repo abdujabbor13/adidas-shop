@@ -17,7 +17,7 @@ const StileCard = () => {
         <div style={{ gap: '10px' }} className="cardStyleWrapper flex-center">
           {products.map((product) => (
             <div key={product.id} style={{ width: '18rem' }} className="card">
-              <img style={{ minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '1005px' }} src={product.url} alt={product.title} />
+              <img style={{ minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '1005px' }} src={product.url} alt={product.title} loading='lazy' />
               <div style={{ padding: '6px' }} className="cardBody">
                 <span className='cardPrice'>{product.price}</span>
                 <h3 style={{ margin: '0m', marginBottom: '6px' }} className='cardTitle'>{product.title}</h3>

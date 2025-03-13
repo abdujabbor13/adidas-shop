@@ -32,7 +32,7 @@ const MySlider = () => {
               className="card card-swip"
             >
               <Link to='/productlist'>
-                <img style={{ minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%' }} src={product.url} alt={product.title} />
+                <img style={{ minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%' }} src={product.url} alt={product.title} loading="lazy"/>
                 <div style={{ padding: '0 15px', height: '75px' }} className="card-info">
                   <span className="price">{product.price}</span>
                   <h3>{product.title}</h3>

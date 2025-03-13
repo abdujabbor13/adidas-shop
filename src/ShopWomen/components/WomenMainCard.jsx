@@ -15,7 +15,7 @@ const WomenMainCard = () => {
         className="mixCard flex-center">
           {womenMixCard.map((card) => (
             <div style={{ padding: '1.5px' }} className="card">
-              <img style={{ minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%' }} src={card.url} alt={card.title} />
+              <img style={{ minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%' }} src={card.url} alt={card.title}  loading='lazy'/>
               <div style={{ padding: '10px 10px' }} className="card-body">
                 <h3 style={{ margin: '10px 0', fontSize: '20px', fontWeight: '500' }}>{card.title}</h3>
                 <p style={{ marginBottom: '20px', fontSize: '15px', fontWeight: '400' }}>{card.info}</p>
