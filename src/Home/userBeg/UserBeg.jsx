@@ -6,7 +6,7 @@ import { AppContext } from "../../context/AppContext";
 import { CloseOutlined } from "@ant-design/icons";
 
 const UserBeg = () => {
-  const { cart, deleteFromCart, addToCart } = useContext(AppContext);
+  const { cart, purchaset, deleteFromCart, addToCart, handleBuy } = useContext(AppContext);
   const navigate = useNavigate();
 
   return (
@@ -17,7 +17,8 @@ const UserBeg = () => {
           style={{ margin: "150px 0 80px 0", justifyContent: "center", flexDirection:'column', gap:'20px' }}
           className="beg-wrapper flex-center"
         >
-          {cart.length === 0 ? (
+          {purchaset ? <h1>Thank you for your purchase.</h1> : (
+          cart.length === 0 ? (
             <>
               <button onClick={() => navigate('/productlist')}>Shop Now</button>
               <h1>Your bag is empty</h1>
@@ -87,10 +88,11 @@ const UserBeg = () => {
                     <p style={{ fontSize: "16px", fontWeight: "bold" }}>
                       You have selected: {product.quantity} products
                     </p>
+                    <button onClick={() => handleBuy(product.id)}>buy</button>
                   </div>
                 </div>
               </div>
-            ))
+            )))
           )}
         </div>
       </div>

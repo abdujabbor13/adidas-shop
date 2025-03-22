@@ -5,6 +5,7 @@ export const AppContext = createContext(null);
 const AppProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [count, setCount] = useState(0);
+  const [purchaset, setPurchaset] = useState(false)
 
   // LocalStorage'dan yuklash
   useEffect(() => {
@@ -44,8 +45,16 @@ const AppProvider = ({ children }) => {
     setCount(0)
   };
 
+
+  // Maxsulotni sotib olish
+
+  const handleBuy = (productId) => {
+    deleteFromCart(productId)
+    setPurchaset(true)
+  }
+
   return (
-    <AppContext.Provider value={{ cart, count, addToCart, deleteFromCart }}>
+    <AppContext.Provider value={{ cart, count, purchaset, addToCart, deleteFromCart, handleBuy }}>
       {children}
     </AppContext.Provider>
   );
