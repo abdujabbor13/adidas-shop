@@ -41,11 +41,8 @@ const Header = () => {
       className="siteHeader"
     >
       <div
-        className="flex-center"
+        className="flex-center header-content"
         style={{
-          justifyContent: "space-between",
-          width: "100%",
-          maxWidth: "1400px",
           margin: "auto",
           padding: "10px 20px",
         }}
@@ -67,7 +64,7 @@ const Header = () => {
           </Link>
         </h1>
         <ul
-          className="flex-center"
+          className="flex-center header-links"
           style={{
             gap: "30px",
             padding: "0",

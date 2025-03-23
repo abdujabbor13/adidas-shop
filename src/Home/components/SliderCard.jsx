@@ -23,7 +23,7 @@ const MySlider = () => {
         spaceBetween={20}
         slidesPerView={4} // Bir vaqtning o'zida 4 ta card ko‘rinadi
         navigation
-        loop={true}
+        loop={slidercard.length > 4}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
         {slidercard.map((product) => (
@@ -76,7 +76,7 @@ const SliderCard = () => {
                 <div style={{ padding: '10px' }} className="card-body">
                   <h3 style={{ margin: '10px 0', fontSize: '20px', fontWeight: '500' }}>{card.title}</h3>
                   <p style={{ marginBottom: '20px', fontSize: '15px', fontWeight: '400' }}>{card.info}</p>
-                  <a style={{ borderBottom: '3px solid #333', textTransform: 'uppercase' }} href="#">Shop now</a>
+                  <span style={{ borderBottom: '3px solid #333', textTransform: 'uppercase' }}>Shop now</span>
                 </div>
             </Link>
               </div>

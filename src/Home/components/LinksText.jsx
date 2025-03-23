@@ -60,7 +60,7 @@ const LinksText = () => {
 
           adidas Originals apparel is a stylish complement to our lifestyle shoes. Our streetwear<br /> collections pull from the archives to put a modern spin on classics like the Firebird<br /> tracksuit and the Tiro pant. Luxe materials, sophisticated silhouettes and unexpected<br /> details elevate our streetwear and transcend sport while at the same time never losing<br /> sight of our heritage. Because our mantra is, and has always been, that through sport we<br /> have the power to change lives.
         </p>
-        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.056 31.8178L25.5403 6.66699L17.7654 11.152L29.6895 31.8178H40.056ZM26.2251 31.8178L16.6374 15.2206L8.86255 19.7056L15.8586 31.8178H26.2251ZM7.77487 23.7878L12.4076 31.8178H2.04107L0 28.2728L7.77487 23.7878Z" fill="white"></path></svg>
+        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M40.056 31.8178L25.5403 6.66699L17.7654 11.152L29.6895 31.8178H40.056ZM26.2251 31.8178L16.6374 15.2206L8.86255 19.7056L15.8586 31.8178H26.2251ZM7.77487 23.7878L12.4076 31.8178H2.04107L0 28.2728L7.77487 23.7878Z" fill="white"></path></svg>
       </div>
     </>
   )

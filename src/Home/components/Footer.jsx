@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <div style={{ width: '1518px', margin: 'auto', marginBottom: '50px', backgroundColor: '#ede734' }}>
+      <div className='footer-wrapper' style={{ width: '1518px', margin: 'auto', marginBottom: '50px', backgroundColor: '#ede734' }}>
         <div style={{ gap: '50px', justifyContent: 'center', padding: '50px 0' }} className="joinus-section flex-center">
           <h2>JOIN OUR ADICLUB & GET 15% OFF</h2>
           <button>sign up for free
@@ -82,7 +82,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            <div className='remove-item'>
               <h2 className='links-title'>SPORTY SPRING GEAR</h2>
               <ul>
                 <li className='Links'><a href="#">About us</a></li>
