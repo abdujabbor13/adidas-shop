@@ -41,10 +41,11 @@ const Header = () => {
       className="siteHeader"
     >
       <div
-        className="flex-center header-content"
+        className="flex-center"
         style={{
           margin: "auto",
           padding: "10px 20px",
+          justifyContent:'space-between'
         }}
       >
         <h1>
